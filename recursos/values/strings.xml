@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Animal Resort</string>
+    <string name="cincoA10"><u>5 a 9 DIAS</u></string>
+    <string name="mas10"><u>10 O MAS DIAS</u></string>
+    <string name="dieza14"><u>10 a 14 DIAS</u></string>
+    <string name="mas15"><u>15 O MAS DIAS</u></string>
+    <string name="labelPreguntaDireccion"><u>Agregar una dirección</u></string>
+    <string name="tuCiudad"><u> TU CIUDAD : </u></string>
+    <string name="dir"><u>TU DIRECCION : </u></string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="documento">Documento</string>
+    <string name="celular">Celular</string>
+    <string name="direccion">Dirección</string>
+    <string name="descripcion_casa">Descripción Casa</string>
+    <string name="registrar">Registrar</string>
+    <string name="ya_tienes_cuenta">¿ya tienes cuenta?</string>
+    <string name="nombre_mascota">Nombre Mascota.</string>
+    <string name="apellido_cliente">Apellido Cliente</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="color">Color</string>
+    <string name="raza">Raza</string>
+    <string name="registrar_mascota">Registrar</string>
+    <string name="usuario">Usuario</string>
+    <string name="mascota">Mascota</string>
+    <string name="servicio_guarderia">Servicio de Guarderia</string>
+    <string name="servicio_peluqueria">Servicio de Peluqueria</string>
+    <string name="consultas_medicas">Servicio de Consultas medicas</string>
+    <string name="servicio_de_ba_o">Servicio de Baño cosmetico o medicado</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="informacion">Información</string>
+    <string name="servicios_administrador">Servicios</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+
+    <string-array name="genero">
+    <item>Macho</item>
+    <item>Hembra</item>
+</string-array>
+
+    <string-array name="especies">
+        <item>perro</item>
+        <item>gato</item>
+    </string-array>
+
+    <string-array name="peso_mascota">
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="dias">
+        <item>Dias</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="tipo_doc">
+        <item>Cédula</item>
+        <item>Pasaporte</item>
+    </string-array>
+
+    <string-array name="serviciosGenerales">
+        <item>Guarderia</item>
+        <item>Hotel</item>
+        <item>Consulta medica</item>
+        <item>Baño</item>
+        <item>Cortes</item>
+
+    </string-array>
+
+    <string-array name="servicioMedico">
+        <item>Consulta a domicilio</item>
+        <item>Cirugia OVH felinos</item>
+        <item>Cirugia castracion felinos</item>
+        <item>Cirugia OVH caninos 1-10 kg</item>
+        <item>Cirugia OVH caninos 10-20 kg</item>
+        <item>Cirugia OVH caninos 20-30 kg</item>
+        <item>Cirugia especializada</item>
+        <item>Profilaxis</item>
+    </string-array>
+
+    <string-array name="categoriaProductos">
+        <item>Concentrados</item>
+        <item>Antiparasitarios</item>
+        <item>Vitaminas</item>
+        <item>Suplementos</item>
+        <item>Juguetes</item>
+        <item>Collares</item>
+    </string-array>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+</resources>

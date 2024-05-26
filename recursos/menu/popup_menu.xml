@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <item
+      android:id="@+id/popup_menu_principal"
+      android:title="Tienda"/>
+  <item
+      android:id="@+id/popup_perfil"
+      android:title="Mi perfil"/>
+  <item
+      android:id="@+id/popup_reservas"
+      android:title="Mis Reservas"/>
+  <item
+      android:id="@+id/popup_mascotas"
+      android:title="Mis mascotas"/>
+  <item
+      android:id="@+id/popup_direcciones"
+      android:title="Mis direcciones "/>
+  <item
+      android:id="@+id/popup_compras"
+      android:title="Mis compras "/>
+
+</menu>
