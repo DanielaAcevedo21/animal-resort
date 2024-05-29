@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="#66FFFFFF"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pizzadude"
+            android:text="Iniciando"
+            android:textColor="@color/textColorButtons"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text="Ingresa tu mail"
+            android:textColor="@color/textColorButtons"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/gothic"
+            android:hint="Mail"
+            android:textColor="@color/textColorButtons"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/pizzadude"
+            android:text="Iniciar sesión"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tienes cuenta?"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:textColor="@color/textColorButtons"
+            android:textSize="20dp"
+           />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrate"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:textColor="@color/textColorButtons"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>
