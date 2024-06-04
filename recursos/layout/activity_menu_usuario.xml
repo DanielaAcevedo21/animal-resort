@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuUsuario"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/white"
+                    android:padding="2dp">
+
+                    <ImageButton
+                        android:id="@+id/mainMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_menu_24dp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/logo_1" />
+
+            </RelativeLayout>
+
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/pizzadude"
+        android:gravity="center"
+        android:text="Servicios \npara tu mascota"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+     <Button
+        android:id="@+id/guarderia"
+         android:text="Guarderia"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_gravity="center"
+         android:background="@drawable/estilos_btns_menu"
+         android:fontFamily="@font/pizzadude"
+         android:textColor="@color/textColorButtons"
+         android:textSize="25dp"
+         android:textStyle="bold"
+         android:layout_marginBottom="5dp"
+         app:backgroundTint="@color/white"></Button>
+
+    <Button
+        android:id="@+id/hotel"
+        android:text="Hotel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/estilos_btns_menu"
+        android:fontFamily="@font/pizzadude"
+        android:textColor="@color/textColorButtons"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:backgroundTint="@color/white"
+        ></Button>
+    <Button
+        android:id="@+id/consultas"
+        android:text="Consulta médica"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/estilos_btns_menu"
+        android:fontFamily="@font/pizzadude"
+        android:textColor="@color/textColorButtons"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:backgroundTint="@color/white"
+        ></Button>
+    <Button
+        android:id="@+id/peluqueria"
+        android:text="Peluquería"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/estilos_btns_menu"
+        android:fontFamily="@font/pizzadude"
+        android:textColor="@color/textColorButtons"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:backgroundTint="@color/white"
+        ></Button>
+    <Button
+        android:id="@+id/banos"
+        android:text="baño"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/estilos_btns_menu"
+        android:fontFamily="@font/pizzadude"
+        android:textColor="@color/textColorButtons"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:backgroundTint="@color/white"
+        >
+    </Button>
+
+            <Button
+                android:id="@+id/tienda"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/estilos_btns_menu"
+                android:fontFamily="@font/pizzadude"
+                android:text="Tienda"
+                android:textColor="@color/textColorButtons"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"></Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
