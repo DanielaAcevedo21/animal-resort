@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Guarderia_calendar"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/white"
+                    android:padding="2dp">
+
+                    <ImageButton
+                        android:id="@+id/mainMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_menu_24dp" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/logo_1" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/img_titulo_guarderia"
+
+                />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/estilo_descuentos1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            >
+
+
+        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/estilo_descuentos1"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rlayoutop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/layoutDias"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/ic_days"
+                                    android:drawablePadding="10dp"
+
+                                    android:fontFamily="@font/gothic"
+                                    android:gravity="center"
+                                    android:text="Días: "
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/tv_dias"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/gothic"
+                                    android:text="0"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/mesMostrar"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/layoutDias"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Mes"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/lyoutDomingo"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mesMostrar"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Dom"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutLunes"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutDomingo"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Lun"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutMartes"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutLunes"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Mar"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutMiercoles"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutMartes"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Mierc"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutJueves"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutMiercoles"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Jue"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutViernes"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutJueves"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Vier"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lyoutSabado"
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mesMostrar"
+                                android:layout_toRightOf="@id/lyoutViernes"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Sab"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_1"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutDomingo"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_2"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutLunes"
+                                android:layout_toRightOf="@+id/dia_1"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_3"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutMartes"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_2"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_4"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutMiercoles"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_3"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_5"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutJueves"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_4"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_6"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutViernes"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_5"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_7"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/lyoutSabado"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_6"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_8"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_1"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_9"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_2"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_1"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_10"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_3"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_2"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_11"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_4"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_3"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_12"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_5"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toRightOf="@+id/dia_4"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_13"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_6"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_5"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_14"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_7"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_6"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_15"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_8"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_16"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_9"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_8"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_17"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_10"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_9"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_18"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_11"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_10"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_19"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_12"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_11"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_20"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_13"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_12"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_21"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_14"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_13"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_22"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_15"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_23"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_16"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_15"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_24"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_17"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_16"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_25"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_18"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_17"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_26"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_19"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_18"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_27"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_20"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_19"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_28"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_21"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_20"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_29"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_22"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_30"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_23"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_22"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_31"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_24"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_23"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_32"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_25"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_24"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_33"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_26"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_25"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_34"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_27"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_26"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_35"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_28"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_27"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_36"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_29"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_37"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_30"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_29"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_38"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_31"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_30"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_39"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_32"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_31"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dia_40"
+                                android:layout_width="53dp"
+                                android:layout_height="53dp"
+                                android:layout_below="@+id/dia_33"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@+id/dia_32"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/mesSig"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dia_40"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/gothic"
+                                android:gravity="center"
+                                android:text="Mes Sig"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/estilo_descuentos1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Dirección de domicilio: "
+                    android:fontFamily="@font/gothic"
+                    android:textColor="@color/textColorGris"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/direccion_reserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:text="Esta esta es mi dirección."
+                    android:textColor="@color/textColorGris"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/estilo_descuentos1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/gothic"
+                    android:gravity="center"
+                    android:text="Selecciona tus mascotas"
+                    android:textColor="@color/textColorGris"
+                    android:textSize="12sp" />
+
+                <ListView
+                    android:id="@+id/list_mascotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="2dp"
+                    android:choiceMode="multipleChoice"
+                    android:fontFamily="@font/gothic"
+                    android:text="seleciona tu marcota"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/estilo_descuentos1">
+        
+    </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/estilo_descuentos1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="3dp"
+                        android:text="Resumen: "
+                        android:fontFamily="@font/gothic"
+                        android:textColor="@color/textColorGris"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Número de mascotas: "
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Días seleccionados: "
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Precio x día sin desc: "
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Descuento x cada día: "
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Precio total:"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/num_masc_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:id="@+id/dias_selec_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/precio_dias_sindesc_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/desc_xdia_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tv_precio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:padding="3dp"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/save_btn"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/boton"
+                                android:fontFamily="@font/pizzadude"
+                                android:text="Reservar"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                app:backgroundTint="@color/colorPrimaryDark"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+
