@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".Banos_new">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/white"
+            android:padding="2dp">
+
+            <ImageButton
+                android:id="@+id/mainMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="10dp"
+                android:background="@drawable/ic_menu_24dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo_1" />
+
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/img_titulo_bano"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            />
+
+            <LinearLayout
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/estilo_descuentos1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:fontFamily="@font/gothic"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text="Seleccione la fecha de baño:"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_fecha" />
+
+                        <TextView
+                            android:id="@+id/fecha_bano"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/gothic"
+                            android:hint="Seleccionar"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textSize="20dp"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/colorPrimary"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/estilo_descuentos1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Dirección de domicilio: "
+                        android:fontFamily="@font/gothic"
+                        android:textColor="@color/textColorGris"
+                        android:textSize="12sp"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/direccion_bano"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:lines="2"
+                        android:text="Esta esta es mi dirección."
+                        android:textColor="@color/textColorGris"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/estilo_descuentos1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:fontFamily="@font/gothic"
+                        android:gravity="center"
+                        android:text="Selecciona tus mascotas"
+                        android:textColor="@color/textColorGris"
+                        android:textSize="12sp" />
+                    <ListView
+
+                        android:id="@+id/list_mascotas_bano"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:choiceMode="singleChoice"
+                        android:fontFamily="@font/gothic"
+                        android:text="seleciona tu marcota"
+                        android:textColor="@color/colorPrimary">
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/estilo_descuentos1"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Precio de baño para esta raza: "
+                        android:fontFamily="@font/gothic"
+                        android:textColor="@color/textColorGris"
+                        android:textSize="12sp"
+                        android:drawableLeft="@drawable/ic_dinero"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/precio_banno_razas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/textColorGris"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/estilo_descuentos1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gothic"
+                            android:hint="Seleccionar adicionales"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"></TextView>
+
+                        <ListView
+                            android:id="@+id/seleccionar_adicionales_banno"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:choiceMode="multipleChoice"
+                            android:fontFamily="@font/gothic"
+                            android:padding="20dp"
+                            android:text="seleciona tu marcota"
+                            android:textColor="@color/colorPrimary"></ListView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_marginTop="20dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="5dp"
+                     android:layout_marginLeft="5dp"
+                     android:orientation="vertical"
+                     android:background="@drawable/estilo_descuentos1">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="25dp"
+                         android:layout_marginBottom="15dp"
+                         android:layout_marginTop="20dp"
+                         android:padding="3dp"
+                         android:text="Resumen: "
+                         android:fontFamily="@font/gothic"
+                         android:textColor="@color/textColorGris"
+                         android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:text="Número de mascotas: "
+                                android:fontFamily="@font/gothic"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Fecha de baño: "
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="Precio total:"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/num_masc_banos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="1"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+                            <TextView
+                                android:id="@+id/dia_bano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="00/00/00"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tv_precio_bano"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/gothic"
+                                android:text="$0"
+                                android:padding="3dp"
+                                android:textColor="@color/textColorGris"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/guardar_bano"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/boton"
+                                android:fontFamily="@font/pizzadude"
+                                android:text="Reservar"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                app:backgroundTint="@color/colorPrimaryDark"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                 </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
