@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="95dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icono_casa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text="Ciudad"
+            android:textColor="@color/textColorGris"
+            android:textSize="12dp"></TextView>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           >
+
+           <RadioButton
+               android:id="@+id/sogamosoRB"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:onClick="onRadioButtonClicked"
+               android:text="Sogamoso">
+
+           </RadioButton>
+
+           <RadioButton
+               android:id="@+id/tunjaRB"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:onClick="onRadioButtonClicked"
+               android:text="Tunja">
+
+           </RadioButton>
+
+       </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text="Dirección "
+            android:textColor="@color/textColorGris"
+            android:textSize="12dp"></TextView>
+
+        <EditText
+            android:id="@+id/direccion_cu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/textColorButtons"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text="Descripción casa"
+            android:textColor="@color/textColorGris"
+            android:textSize="12dp"></TextView>
+        <EditText
+            android:id="@+id/desc_direccioncu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLines="4"
+            android:lines="4"
+            android:fontFamily="@font/gothic"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/textColorButtons"
+            android:textSize="15dp"></EditText>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/guardar_direccion"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
